@@ -5,14 +5,7 @@ import os
 import csv
 
 csvpath = os.path.join('Resources', 'budget_data.csv')
-
-# # Method 1: Plain Reading of CSV files
-with open(csvpath, 'r') as file_handler:
-     lines = file_handler.read()
-     print(lines)
-     print(type(lines))
-
-
+#1.1 Read file
 # Method 2: Improved Reading using CSV module
 
 with open(csvpath, newline='') as csvfile:
@@ -29,3 +22,9 @@ with open(csvpath, newline='') as csvfile:
     # Read each row of data after the header
     for row in csvreader:
         print(row)
+#1.2 Calculate Total Months
+#1.3 Sum of all Profits/Losses
+#1.4 Avg change in profits/losses
+#1.5 Max inc in Profit (best day)
+#1.6 Max Decrease in losses (worst day)
+#1.7 Output to terminal and CSV

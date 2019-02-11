@@ -4,16 +4,9 @@
 import os
 import csv
 
-csvpath = os.path.join('Resources', 'budget_data.csv')
+csvpath = os.path.join('Resources', 'election_data.csv')
 
-# # Method 1: Plain Reading of CSV files
-with open(csvpath, 'r') as file_handler:
-     lines = file_handler.read()
-     print(lines)
-     print(type(lines))
-
-
-# Method 2: Improved Reading using CSV module
+#2.1 Read csv
 
 with open(csvpath, newline='') as csvfile:
 
@@ -29,4 +22,10 @@ with open(csvpath, newline='') as csvfile:
     # Read each row of data after the header
     for row in csvreader:
         print(row)
+#2.2 Analyze vote and calc Total
 
+#2.3 List Unique Candidates
+#2.4 % of votes each Candidate won Can_per = (Can_vote/Total_vote)100
+#2.5 Total # votes each candidate Can_per x Total Vote or sum by tick
+#2.6 Candidate with most votes (print max)
+#2.7 Outputs to toerminal and to CSV
