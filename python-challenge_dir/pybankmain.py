@@ -43,9 +43,6 @@ while i < (len(list1)-1):
         diff_list.append(diff)
         i+=1
     
-
-
-#list.append(change)
 #1.6 Max Decrease in losses (worst day)
 max_value = max(diff_list)
 min_value = min(diff_list)
@@ -57,7 +54,6 @@ print('The company made ' + '$' + str(money) + ' in total revenue over that peri
 print('This company averaged a change in profits and losses of ' + '$' + str(avg_value) + ' each month.')
 print('The greatest decrease in profits was ' + '$' +str(min_value) + " in Sep-13")
 print('The greatest increase in profits was ' + '$' + str(max_value) + " in Feb-12")  
-print()
 
     # Specify the file to write to --> write to csv
 output_path = os.path.join("Resources", "newbudget_data.csv")
